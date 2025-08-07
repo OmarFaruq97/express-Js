@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const productRoutes = require("./routes/productRoutes");
+// const {clint} = require ('pg')
 
 app.use(express.json());
 app.use("/api/products", productRoutes);
